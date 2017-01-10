@@ -88,19 +88,18 @@ open class Listenable<T>: AnyObject {
     ///
     /// - Parameter enumerateBlock: Execution block for each listener.
     public func enumerate(_ enumerateBlock: ListenerEnumeration) -> Void {
-        var indexesToRemove = [Int]()
+        var listenersToRemove = [ListenableNode<T>]()
         
         for (index, listenerWrapper) in self.listeners.enumerated() {
             if let listener = listenerWrapper.value as? T {
                 enumerateBlock(listener, index)
             } else {
-                indexesToRemove.append(index)
+                listenersToRemove.append(listenerWrapper)
             }
         }
-        
         // clean up any listeners which have been destroyed
-        for removalIndex in indexesToRemove {
-            self.listeners.remove(at: removalIndex)
+        self.listeners = self.listeners.filter {
+            value in !listenersToRemove.contains(where: {$0 === value})
         }
     }
     
