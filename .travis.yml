@@ -10,7 +10,7 @@ xcode_scheme: Listenable
 osx_image: xcode8.2
 
 before_install:
-  - cd ./Project
+  - cd ./Source
 
 script:
   - xcodebuild clean build test -project Listenable.xcodeproj -scheme Listenable
