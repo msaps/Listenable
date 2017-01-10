@@ -14,7 +14,7 @@ open class Listenable<T>: AnyObject {
     
     // MARK: Closures
     
-    public typealias ListenerEnumeration = (_ listener: T,_ index: Int) -> Void
+    public typealias ListenerUpdate = (_ listener: T,_ index: Int) -> Void
     
     // MARK: Properties
     
@@ -84,15 +84,15 @@ open class Listenable<T>: AnyObject {
     }
     
     
-    /// Enumerate through all the listeners of the Listener object.
+    /// Update all the listeners of the Listener object.
     ///
-    /// - Parameter enumerateBlock: Execution block for each listener.
-    public func enumerate(_ enumerateBlock: ListenerEnumeration) -> Void {
+    /// - Parameter updateBlock: Update execution block for each listener.
+    public func updateListeners(_ updateBlock: ListenerUpdate) -> Void {
         var listenersToRemove = [ListenerNode<T>]()
         
         for (index, listenerWrapper) in self.listeners.enumerated() {
             if let listener = listenerWrapper.value as? T {
-                enumerateBlock(listener, index)
+                updateBlock(listener, index)
             } else {
                 listenersToRemove.append(listenerWrapper)
             }

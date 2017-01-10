@@ -19,7 +19,7 @@ class ListenableObject: Listenable<ListenableObjectDelegate> {
     
     /// Calls listenableObjectDidProvideUpdate on all registered listeners.
     func updateAllListeners() {
-        self.enumerate { (listener, index) in
+        self.updateListeners{ (listener, index) in
             listener.listenableObjectDidProvideUpdate(self)
         }
     }
