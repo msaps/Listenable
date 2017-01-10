@@ -18,7 +18,7 @@ open class Listenable<T>: AnyObject {
     
     // MARK: Properties
     
-    lazy private var listeners = [ListenableNode<T>]()
+    lazy private var listeners = [ListenerNode<T>]()
     
     /// The number of currently active listeners.
     var listenerCount: Int {
@@ -41,7 +41,7 @@ open class Listenable<T>: AnyObject {
     /// - Returns: Whether the listener was successfully added.
     @discardableResult public func add(listener: T) -> Bool {
         if self.index(ofListener: listener) == nil {
-            self.listeners.append(ListenableNode(value: listener))
+            self.listeners.append(ListenerNode(value: listener))
             return true
         }
         return false
@@ -88,7 +88,7 @@ open class Listenable<T>: AnyObject {
     ///
     /// - Parameter enumerateBlock: Execution block for each listener.
     public func enumerate(_ enumerateBlock: ListenerEnumeration) -> Void {
-        var listenersToRemove = [ListenableNode<T>]()
+        var listenersToRemove = [ListenerNode<T>]()
         
         for (index, listenerWrapper) in self.listeners.enumerated() {
             if let listener = listenerWrapper.value as? T {
