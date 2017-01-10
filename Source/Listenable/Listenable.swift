@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// An object which can have a number of listeners for delegation.
 open class Listenable<T>: AnyObject {
     
@@ -82,7 +81,6 @@ open class Listenable<T>: AnyObject {
     public func removeAllListeners() -> Void {
         self.listeners.removeAll()
     }
-    
     
     /// Update all the listeners of the Listener object.
     ///
