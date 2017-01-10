@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22C3CB0760ECB094F8A7D4DF3CD08226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		283E9EDDA0E9F581E4AA70718B8290A0 /* Listenable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 736F166F15A0FCFE17FAE50081FB1A61 /* Listenable-dummy.m */; };
+		419E9BDB5EDBB285F8DA0D31742AF85A /* Listenable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E20E8835B970AD78A920423B6BCC410C /* Listenable-dummy.m */; };
+		57431DE394DD460999439BF3A9948093 /* Listenable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D57B5504D663D4480FE7F4EF5B5169B /* Listenable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70F20939F450EF118DAA7DFFA69FAA05 /* Pods-Listenable-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883AF6A37DB0F1A6DB15BC98B42A3FD0 /* Pods-Listenable-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC23D1B6951C3047DE9A79F48CFB9A3 /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C15F899E3422C1241128B4C478FC19 /* Listenable.swift */; };
+		B55C39B433726FDD3986308C55679129 /* Listenable.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4E16385B7758A1FF78A92F39C79F22 /* Listenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB41F53D029F97928B65806DFAE9202C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C51C0A85142D8AE95D22984136144EAF /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */; };
-		CD15088558C4984480E6F03A4BC98F7C /* Listenable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B451274B2875AD1F95CD24336EE2DC /* Listenable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C744F3ED245DF23FA63FC91E997FC5F3 /* ListenerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E03BC760C678A9DADC8013C8DFD2AD /* ListenerNode.swift */; };
 		D352E9B8F011DCE4FF968E799DD1A1AE /* Pods-Listenable-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC381D5FB9E37EF2F3EB0F6BAEF8DF2F /* Pods-Listenable-Example-dummy.m */; };
-		D6465F4E1E24F812004E8623 /* ListenableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F4D1E24F812004E8623 /* ListenableNode.swift */; };
-		D9A77A2D6C5CC6E418FA1CF6C9294831 /* Listenable.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EE61FF1082B66A893A4052A07F1BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,38 +23,46 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EF0BF17CCEDD50F37D3F470F0993C605;
+			remoteGlobalIDString = 363591E996B98A724205880378892455;
 			remoteInfo = Listenable;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003E125D9306B6C538271C9A2C5FC364 /* Listenable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-prefix.pch"; sourceTree = "<group>"; };
-		06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Listenable.framework; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB0B8911B275B36566BF3A1F3A2937 /* Pods-Listenable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Listenable-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
 		4EC670DBE31FFAE2914CACD54697C9B0 /* Pods-Listenable-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Listenable-Example-frameworks.sh"; sourceTree = "<group>"; };
 		5B458E4CCA76DCDABDE16341979F9A2F /* Pods-Listenable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Listenable-Example.release.xcconfig"; sourceTree = "<group>"; };
-		655D6251EC8BFC454E6D12C220712A4B /* Listenable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Listenable.xcconfig; sourceTree = "<group>"; };
+		6D57B5504D663D4480FE7F4EF5B5169B /* Listenable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-umbrella.h"; sourceTree = "<group>"; };
 		6D62246A07D1ED66DC3E782C34903110 /* Pods-Listenable-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Listenable-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DEDDD8C18A440A80A33A92C1B107040 /* Pods-Listenable-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Listenable-Example.modulemap"; sourceTree = "<group>"; };
-		736F166F15A0FCFE17FAE50081FB1A61 /* Listenable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Listenable-dummy.m"; sourceTree = "<group>"; };
-		7CE48DBCFB9604C2BD52C7D9BB7A58B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEDDD8C18A440A80A33A92C1B107040 /* Pods-Listenable-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Listenable-Example.modulemap"; sourceTree = "<group>"; };
+		82E03BC760C678A9DADC8013C8DFD2AD /* ListenerNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListenerNode.swift; sourceTree = "<group>"; };
 		883AF6A37DB0F1A6DB15BC98B42A3FD0 /* Pods-Listenable-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Listenable-Example-umbrella.h"; sourceTree = "<group>"; };
-		8A76D54CD9551FE2B66C9BE4104865E5 /* Pods_Listenable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listenable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A4037B82D8CE9493E26F37E67625E5D /* Listenable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Listenable.modulemap; sourceTree = "<group>"; };
-		A5B451274B2875AD1F95CD24336EE2DC /* Listenable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-umbrella.h"; sourceTree = "<group>"; };
+		8A76D54CD9551FE2B66C9BE4104865E5 /* Pods_Listenable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Listenable_Example.framework; path = "Pods-Listenable-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FDB383D6619BD4539B611732C7E472F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC381D5FB9E37EF2F3EB0F6BAEF8DF2F /* Pods-Listenable-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Listenable-Example-dummy.m"; sourceTree = "<group>"; };
 		B7AF356E6444657C96E31C25EFE9F5DE /* Pods-Listenable-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Listenable-Example-resources.sh"; sourceTree = "<group>"; };
 		BE4167B1003F6CC7DCCC9DD58337F5A4 /* Pods-Listenable-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Listenable-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C06C7B3CEB73C77AD937ECD50F21878E /* Listenable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Listenable.modulemap; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D6465F4D1E24F812004E8623 /* ListenableNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenableNode.swift; sourceTree = "<group>"; };
+		E20E8835B970AD78A920423B6BCC410C /* Listenable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Listenable-dummy.m"; sourceTree = "<group>"; };
+		E6C9CA5120BA4EA92AB677324547130A /* Listenable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Listenable.xcconfig; sourceTree = "<group>"; };
 		EDDCCFAC5395B4B907F38741ADB4F905 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Listenable.h; sourceTree = "<group>"; };
+		F854175D844F2B6500F7272BAEE1D676 /* Listenable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-prefix.pch"; sourceTree = "<group>"; };
+		F9C15F899E3422C1241128B4C478FC19 /* Listenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
+		FA4E16385B7758A1FF78A92F39C79F22 /* Listenable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Listenable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		010AE4E85516AE4041120D3D746AA100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EE61FF1082B66A893A4052A07F1BB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		299FDD88B310C395D3E9909B020296A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,47 +71,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F616DF194FCFDF64F67AF4CE94BDEBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22C3CB0760ECB094F8A7D4DF3CD08226 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04E01043738599F7483F71609712A7EC /* Listenable */ = {
+		0B516F6F4F4FD152211D4B3418FE9F4F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D61B8E5086DFDF0DC67EF9CA04BB34CF /* Listenable */,
-				2D84BC8D7B2C123E6305F230AB781B7A /* Support Files */,
+				1F2C0123BDE366A9EC694EB8953E283F /* Listenable */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1F2C0123BDE366A9EC694EB8953E283F /* Listenable */ = {
+			isa = PBXGroup;
+			children = (
+				218385D7297CDAB7DE67A3DB7E871B14 /* Listenable */,
+				D42078AA014058528139D3A042EE8272 /* Support Files */,
 			);
 			name = Listenable;
 			path = ../../Source;
 			sourceTree = "<group>";
 		};
-		0B516F6F4F4FD152211D4B3418FE9F4F /* Development Pods */ = {
+		218385D7297CDAB7DE67A3DB7E871B14 /* Listenable */ = {
 			isa = PBXGroup;
 			children = (
-				04E01043738599F7483F71609712A7EC /* Listenable */,
+				FA4E16385B7758A1FF78A92F39C79F22 /* Listenable.h */,
+				F9C15F899E3422C1241128B4C478FC19 /* Listenable.swift */,
+				82E03BC760C678A9DADC8013C8DFD2AD /* ListenerNode.swift */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2D84BC8D7B2C123E6305F230AB781B7A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7CE48DBCFB9604C2BD52C7D9BB7A58B7 /* Info.plist */,
-				9A4037B82D8CE9493E26F37E67625E5D /* Listenable.modulemap */,
-				655D6251EC8BFC454E6D12C220712A4B /* Listenable.xcconfig */,
-				736F166F15A0FCFE17FAE50081FB1A61 /* Listenable-dummy.m */,
-				003E125D9306B6C538271C9A2C5FC364 /* Listenable-prefix.pch */,
-				A5B451274B2875AD1F95CD24336EE2DC /* Listenable-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Example/Pods/Target Support Files/Listenable";
+			name = Listenable;
+			path = Listenable;
 			sourceTree = "<group>";
 		};
 		370DE637F8F40B9754AC304E28569EC4 /* Targets Support Files */ = {
@@ -150,14 +147,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D61B8E5086DFDF0DC67EF9CA04BB34CF /* Listenable */ = {
+		D42078AA014058528139D3A042EE8272 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */,
-				4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */,
-				D6465F4D1E24F812004E8623 /* ListenableNode.swift */,
+				9FDB383D6619BD4539B611732C7E472F /* Info.plist */,
+				C06C7B3CEB73C77AD937ECD50F21878E /* Listenable.modulemap */,
+				E6C9CA5120BA4EA92AB677324547130A /* Listenable.xcconfig */,
+				E20E8835B970AD78A920423B6BCC410C /* Listenable-dummy.m */,
+				F854175D844F2B6500F7272BAEE1D676 /* Listenable-prefix.pch */,
+				6D57B5504D663D4480FE7F4EF5B5169B /* Listenable-umbrella.h */,
 			);
-			path = Listenable;
+			name = "Support Files";
+			path = "../Example/Pods/Target Support Files/Listenable";
 			sourceTree = "<group>";
 		};
 		ED535A022A23C090B625609ECEE08D65 /* Pods-Listenable-Example */ = {
@@ -189,18 +190,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1B251465FDC3A9F52CCE7D7AB5C514F /* Headers */ = {
+		F92D2DE1BF99D0CBF5FB60F8FC81D71A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD15088558C4984480E6F03A4BC98F7C /* Listenable-umbrella.h in Headers */,
-				D9A77A2D6C5CC6E418FA1CF6C9294831 /* Listenable.h in Headers */,
+				57431DE394DD460999439BF3A9948093 /* Listenable-umbrella.h in Headers */,
+				B55C39B433726FDD3986308C55679129 /* Listenable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		363591E996B98A724205880378892455 /* Listenable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E55A0B75BFCB9DE1AEC1DE0D1063BE /* Build configuration list for PBXNativeTarget "Listenable" */;
+			buildPhases = (
+				2A345DAA82891DBFECCAA6745B608444 /* Sources */,
+				010AE4E85516AE4041120D3D746AA100 /* Frameworks */,
+				F92D2DE1BF99D0CBF5FB60F8FC81D71A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Listenable;
+			productName = Listenable;
+			productReference = 06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7A426F2DA51D03D1369AB07F9CC997DB /* Pods-Listenable-Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC382CFE1FBC91EFFA1EE53535F4805 /* Build configuration list for PBXNativeTarget "Pods-Listenable-Example" */;
@@ -217,23 +235,6 @@
 			name = "Pods-Listenable-Example";
 			productName = "Pods-Listenable-Example";
 			productReference = 8A76D54CD9551FE2B66C9BE4104865E5 /* Pods_Listenable_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EF0BF17CCEDD50F37D3F470F0993C605 /* Listenable */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB42B4BED142BFE2B7F3C07FB81CC5A8 /* Build configuration list for PBXNativeTarget "Listenable" */;
-			buildPhases = (
-				9CF3E3FABA539B6B10526CCE573E614C /* Sources */,
-				4F616DF194FCFDF64F67AF4CE94BDEBC /* Frameworks */,
-				A1B251465FDC3A9F52CCE7D7AB5C514F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Listenable;
-			productName = Listenable;
-			productReference = 06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,28 +258,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF0BF17CCEDD50F37D3F470F0993C605 /* Listenable */,
+				363591E996B98A724205880378892455 /* Listenable */,
 				7A426F2DA51D03D1369AB07F9CC997DB /* Pods-Listenable-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A345DAA82891DBFECCAA6745B608444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419E9BDB5EDBB285F8DA0D31742AF85A /* Listenable-dummy.m in Sources */,
+				9BC23D1B6951C3047DE9A79F48CFB9A3 /* Listenable.swift in Sources */,
+				C744F3ED245DF23FA63FC91E997FC5F3 /* ListenerNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98AD9B7D97BF51C414F03AA5594D8466 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D352E9B8F011DCE4FF968E799DD1A1AE /* Pods-Listenable-Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CF3E3FABA539B6B10526CCE573E614C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6465F4E1E24F812004E8623 /* ListenableNode.swift in Sources */,
-				283E9EDDA0E9F581E4AA70718B8290A0 /* Listenable-dummy.m in Sources */,
-				C51C0A85142D8AE95D22984136144EAF /* Listenable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,44 +289,12 @@
 		298777BA996074495C139B702A2309DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Listenable;
-			target = EF0BF17CCEDD50F37D3F470F0993C605 /* Listenable */;
+			target = 363591E996B98A724205880378892455 /* Listenable */;
 			targetProxy = 0BC38637BEA097DB246A9BA719E82879 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0127AC9D6010F15CB89852624751D08E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655D6251EC8BFC454E6D12C220712A4B /* Listenable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Listenable/Listenable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Listenable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Listenable/Listenable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Listenable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		0D9361E0DC54ED2D50B70B64BA7C0054 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B458E4CCA76DCDABDE16341979F9A2F /* Pods-Listenable-Example.release.xcconfig */;
@@ -355,6 +324,71 @@
 				PRODUCT_NAME = Pods_Listenable_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C9D0E948B45AEE091A1E52CEC3A181F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C9CA5120BA4EA92AB677324547130A /* Listenable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Listenable/Listenable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Listenable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Listenable/Listenable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Listenable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31B2A49AB76BE4B27D591214CA028A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C9CA5120BA4EA92AB677324547130A /* Listenable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Listenable/Listenable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Listenable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Listenable/Listenable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Listenable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -437,39 +471,6 @@
 			};
 			name = Debug;
 		};
-		DEFC699DBA12D0343D4BFAF2B7D9E492 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655D6251EC8BFC454E6D12C220712A4B /* Listenable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Listenable/Listenable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Listenable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Listenable/Listenable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Listenable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -526,11 +527,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB42B4BED142BFE2B7F3C07FB81CC5A8 /* Build configuration list for PBXNativeTarget "Listenable" */ = {
+		D2E55A0B75BFCB9DE1AEC1DE0D1063BE /* Build configuration list for PBXNativeTarget "Listenable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEFC699DBA12D0343D4BFAF2B7D9E492 /* Debug */,
-				0127AC9D6010F15CB89852624751D08E /* Release */,
+				1C9D0E948B45AEE091A1E52CEC3A181F /* Debug */,
+				31B2A49AB76BE4B27D591214CA028A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
