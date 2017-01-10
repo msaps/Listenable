@@ -1,0 +1,14 @@
+language: swift
+
+branches:
+ only:
+ - master
+ - develop
+
+xcode_project: Listenable.xcodeproj
+xcode_scheme: Listenable
+osx_image: xcode8.2
+xcode_sdk: iphonesimulator10.2
+
+script:
+- xcodebuild clean build test -project Listenable.xcodeproj -scheme Listenable
