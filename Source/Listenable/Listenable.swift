@@ -47,6 +47,14 @@ open class Listenable<T>: AnyObject {
         return false
     }
     
+    /// Add a number of new listeners to the Listenable object.
+    ///
+    /// - Parameter listeners: The new listeners to add.
+    public func add(listeners: [T]) -> Void {
+        for listener in listeners {
+            self.add(listener: listener)
+        }
+    }
     
     /// Remove a listener from the Listenable object.
     ///
@@ -61,6 +69,14 @@ open class Listenable<T>: AnyObject {
         return true
     }
     
+    /// Remove a number of listeners from the Listenable object.
+    ///
+    /// - Parameter listeners: The listeners to remove.
+    public func remove(listeners: [T]) -> Void {
+        for listener in listeners {
+            self.remove(listener: listener)
+        }
+    }
     
     /// Remove all listeners from the Listenable object.
     public func removeAllListeners() -> Void {
