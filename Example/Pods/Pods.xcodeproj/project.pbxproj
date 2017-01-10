@@ -14,6 +14,7 @@
 		C51C0A85142D8AE95D22984136144EAF /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */; };
 		CD15088558C4984480E6F03A4BC98F7C /* Listenable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B451274B2875AD1F95CD24336EE2DC /* Listenable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D352E9B8F011DCE4FF968E799DD1A1AE /* Pods-Listenable-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC381D5FB9E37EF2F3EB0F6BAEF8DF2F /* Pods-Listenable-Example-dummy.m */; };
+		D6465F4E1E24F812004E8623 /* ListenableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F4D1E24F812004E8623 /* ListenableNode.swift */; };
 		D9A77A2D6C5CC6E418FA1CF6C9294831 /* Listenable.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,25 +30,26 @@
 
 /* Begin PBXFileReference section */
 		003E125D9306B6C538271C9A2C5FC364 /* Listenable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-prefix.pch"; sourceTree = "<group>"; };
-		06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Listenable.framework; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06441D416561B1BEF96CBE01B5ABEBF3 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DB0B8911B275B36566BF3A1F3A2937 /* Pods-Listenable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Listenable-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
 		4EC670DBE31FFAE2914CACD54697C9B0 /* Pods-Listenable-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Listenable-Example-frameworks.sh"; sourceTree = "<group>"; };
 		5B458E4CCA76DCDABDE16341979F9A2F /* Pods-Listenable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Listenable-Example.release.xcconfig"; sourceTree = "<group>"; };
 		655D6251EC8BFC454E6D12C220712A4B /* Listenable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Listenable.xcconfig; sourceTree = "<group>"; };
 		6D62246A07D1ED66DC3E782C34903110 /* Pods-Listenable-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Listenable-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DEDDD8C18A440A80A33A92C1B107040 /* Pods-Listenable-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Listenable-Example.modulemap"; sourceTree = "<group>"; };
+		6DEDDD8C18A440A80A33A92C1B107040 /* Pods-Listenable-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Listenable-Example.modulemap"; sourceTree = "<group>"; };
 		736F166F15A0FCFE17FAE50081FB1A61 /* Listenable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Listenable-dummy.m"; sourceTree = "<group>"; };
 		7CE48DBCFB9604C2BD52C7D9BB7A58B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883AF6A37DB0F1A6DB15BC98B42A3FD0 /* Pods-Listenable-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Listenable-Example-umbrella.h"; sourceTree = "<group>"; };
-		8A76D54CD9551FE2B66C9BE4104865E5 /* Pods_Listenable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Listenable_Example.framework; path = "Pods-Listenable-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A4037B82D8CE9493E26F37E67625E5D /* Listenable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Listenable.modulemap; sourceTree = "<group>"; };
+		8A76D54CD9551FE2B66C9BE4104865E5 /* Pods_Listenable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listenable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A4037B82D8CE9493E26F37E67625E5D /* Listenable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Listenable.modulemap; sourceTree = "<group>"; };
 		A5B451274B2875AD1F95CD24336EE2DC /* Listenable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Listenable-umbrella.h"; sourceTree = "<group>"; };
 		AC381D5FB9E37EF2F3EB0F6BAEF8DF2F /* Pods-Listenable-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Listenable-Example-dummy.m"; sourceTree = "<group>"; };
 		B7AF356E6444657C96E31C25EFE9F5DE /* Pods-Listenable-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Listenable-Example-resources.sh"; sourceTree = "<group>"; };
 		BE4167B1003F6CC7DCCC9DD58337F5A4 /* Pods-Listenable-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Listenable-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6465F4D1E24F812004E8623 /* ListenableNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenableNode.swift; sourceTree = "<group>"; };
 		EDDCCFAC5395B4B907F38741ADB4F905 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Listenable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,8 +155,8 @@
 			children = (
 				FF2D67AF4E393A23AB09B72C6F7AF9D0 /* Listenable.h */,
 				4CDBD43A25EEA57A9DC63A04C3104077 /* Listenable.swift */,
+				D6465F4D1E24F812004E8623 /* ListenableNode.swift */,
 			);
-			name = Listenable;
 			path = Listenable;
 			sourceTree = "<group>";
 		};
@@ -274,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6465F4E1E24F812004E8623 /* ListenableNode.swift in Sources */,
 				283E9EDDA0E9F581E4AA70718B8290A0 /* Listenable-dummy.m in Sources */,
 				C51C0A85142D8AE95D22984136144EAF /* Listenable.swift in Sources */,
 			);
