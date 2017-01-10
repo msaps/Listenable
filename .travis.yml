@@ -9,8 +9,11 @@ xcode_project: Listenable.xcodeproj
 xcode_scheme: Listenable
 osx_image: xcode8.2
 
+before_install:
+  - cd ./Project
+
 script:
-- xcodebuild clean build test -project Listenable.xcodeproj -scheme Listenable
+  - xcodebuild clean build test -project Listenable.xcodeproj -scheme Listenable
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
