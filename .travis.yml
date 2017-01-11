@@ -13,7 +13,7 @@ before_install:
   - cd ./Source
 
 script:
-  - xcodebuild -project Listenable.xcodeproj -scheme Listenable -sdk iphonesimulator10.2 -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' build test
+  - xcodebuild -project Listenable.xcodeproj -scheme Listenable -sdk iphonesimulator10.2 -destination 'platform=iOS Simulator,id=E40727B3-41FB-4D6E-B4CB-BFA87109EB12,name=iPhone 7,OS=10.2' build test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
