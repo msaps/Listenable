@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/MerrickSapsford"
 
   s.source       = { :git => "https://github.com/MerrickSapsford/Listenable.git", :tag => s.version.to_s }
-  s.source_files  = "/Source/Listenable/**/*.{h,m,swift}"
+  s.source_files  = "Source/Listenable/**/*.{h,m,swift}"
 
 end
