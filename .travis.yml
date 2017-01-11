@@ -1,9 +1,9 @@
-language: swift
+language: objective-c
 
-branches:
- only:
- - master
- - develop
+#branches:
+# only:
+# - master
+# - develop
 
 xcode_project: Listenable.xcodeproj
 xcode_scheme: Listenable
