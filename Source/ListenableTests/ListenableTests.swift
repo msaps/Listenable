@@ -92,7 +92,7 @@ class ListenableTests: XCTestCase {
         
         var evaluatedListenerCount = 0
         var finalIndex = 0
-        self.listenableObject.enumerate { (listener, index) in
+        self.listenableObject.updateListeners { (listener, index) in
             evaluatedListenerCount += 1
             finalIndex = index
         }
@@ -113,7 +113,7 @@ class ListenableTests: XCTestCase {
         
         // enumerate
         var evaluatedListenerCount = 0
-        self.listenableObject.enumerate { (listener, index) in
+        self.listenableObject.updateListeners { (listener, index) in
             evaluatedListenerCount += 1
         }
         let postEnumerationCount = self.listenableObject.listenerCount
