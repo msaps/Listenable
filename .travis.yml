@@ -5,13 +5,10 @@
 # - develop
 
 language: objective-c
-osx_image: xcode8.2
-
-before_install:
-  - cd ./Source
+osx_image: xcode8.0
 
 script:
-  - xcodebuild -project Listenable.xcodeproj -scheme Listenable -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' build test
+  - xcodebuild -workspace Listenable.xcworkspace -scheme Listenable -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
