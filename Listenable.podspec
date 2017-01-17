@@ -5,13 +5,12 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.version      = "0.9.0"
-  s.summary      = "TODO"
+  s.summary      = "Swift object that provides access to multiple observers for delegation."
   s.description  = <<-DESC
-                        TODO
+                        Listenable is an object that provides access to multiple observers for enhanced delegation distribution.
                      DESC
 
-  s.homepage     = "https://github.com/MerrickSapsford/Pageboy"
-  #s.screenshots  = "https://raw.githubusercontent.com/MerrickSapsford/MSSTabbedPageViewController/develop/Resource/MSSTabbedPageViewController.gif"
+  s.homepage     = "https://github.com/MerrickSapsford/Listenable"
   s.license      = "MIT"
   s.author       = { "Merrick Sapsford" => "merrick@sapsford.tech" }
   s.social_media_url   = "http://twitter.com/MerrickSapsford"
