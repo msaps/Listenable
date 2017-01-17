@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6465F591E250337004E8623 /* ListenerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F581E250337004E8623 /* ListenerNode.swift */; };
+		D6465F5B1E250355004E8623 /* TestListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5A1E250355004E8623 /* TestListenableObject.swift */; };
+		D6465F5D1E25063F004E8623 /* TestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5C1E25063F004E8623 /* TestListener.swift */; };
 		D6F613BB1E24F59D004884E8 /* Listenable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F613B11E24F59D004884E8 /* Listenable.framework */; };
 		D6F613C01E24F59D004884E8 /* ListenableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613BF1E24F59D004884E8 /* ListenableTests.swift */; };
 		D6F613C21E24F59D004884E8 /* Listenable.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F613B41E24F59D004884E8 /* Listenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6465F581E250337004E8623 /* ListenerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerNode.swift; sourceTree = "<group>"; };
+		D6465F5A1E250355004E8623 /* TestListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListenableObject.swift; sourceTree = "<group>"; };
+		D6465F5C1E25063F004E8623 /* TestListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListener.swift; sourceTree = "<group>"; };
 		D6F613B11E24F59D004884E8 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F613B41E24F59D004884E8 /* Listenable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Listenable.h; sourceTree = "<group>"; };
 		D6F613B51E24F59D004884E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 			children = (
 				D6F613B41E24F59D004884E8 /* Listenable.h */,
 				D6F613CB1E24F5F2004884E8 /* Listenable.swift */,
+				D6465F581E250337004E8623 /* ListenerNode.swift */,
 				D6F613B51E24F59D004884E8 /* Info.plist */,
 			);
 			path = Listenable;
@@ -83,6 +90,8 @@
 		D6F613BE1E24F59D004884E8 /* ListenableTests */ = {
 			isa = PBXGroup;
 			children = (
+				D6465F5A1E250355004E8623 /* TestListenableObject.swift */,
+				D6465F5C1E25063F004E8623 /* TestListener.swift */,
 				D6F613BF1E24F59D004884E8 /* ListenableTests.swift */,
 				D6F613C11E24F59D004884E8 /* Info.plist */,
 			);
@@ -200,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6465F591E250337004E8623 /* ListenerNode.swift in Sources */,
 				D6F613CC1E24F5F2004884E8 /* Listenable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F613C01E24F59D004884E8 /* ListenableTests.swift in Sources */,
+				D6465F5D1E25063F004E8623 /* TestListener.swift in Sources */,
+				D6465F5B1E250355004E8623 /* TestListenableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -311,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -7,25 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A33888CFFFA05F0923908D4 /* Pods_Listenable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211FA0C401A38B05A8FAE731 /* Pods_Listenable_Example.framework */; };
+		D6465F521E24FBE9004E8623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6465F501E24FBE9004E8623 /* Assets.xcassets */; };
+		D6465F531E24FBE9004E8623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6465F511E24FBE9004E8623 /* LaunchScreen.storyboard */; };
+		D6465F551E24FC57004E8623 /* ListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F541E24FC57004E8623 /* ListenableObject.swift */; };
+		D6465F571E24FE5F004E8623 /* ListenerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F561E24FE5F004E8623 /* ListenerButton.swift */; };
 		D6F613DA1E24F632004884E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613D91E24F632004884E8 /* AppDelegate.swift */; };
-		D6F613DC1E24F632004884E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613DB1E24F632004884E8 /* ViewController.swift */; };
+		D6F613DC1E24F632004884E8 /* ListenerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613DB1E24F632004884E8 /* ListenerViewController.swift */; };
 		D6F613DF1E24F632004884E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F613DD1E24F632004884E8 /* Main.storyboard */; };
-		D6F613E11E24F632004884E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F613E01E24F632004884E8 /* Assets.xcassets */; };
-		D6F613E41E24F632004884E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F613E21E24F632004884E8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		46A961DB1E2D725C001C659E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6F613B11E24F59D004884E8;
+			remoteInfo = Listenable;
+		};
+		46A961DD1E2D725C001C659E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6F613BA1E24F59D004884E8;
+			remoteInfo = ListenableTests;
+		};
+		46A961E01E2D7283001C659E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F613B01E24F59D004884E8;
+			remoteInfo = Listenable;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		211FA0C401A38B05A8FAE731 /* Pods_Listenable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listenable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA98ED66502BBB79BF8191F7 /* Pods-Listenable-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listenable-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Listenable-Example/Pods-Listenable-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		46A961D61E2D725C001C659E /* Listenable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Listenable.xcodeproj; path = ../Source/Listenable.xcodeproj; sourceTree = "<group>"; };
+		D6465F501E24FBE9004E8623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6465F511E24FBE9004E8623 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6465F541E24FC57004E8623 /* ListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenableObject.swift; sourceTree = "<group>"; };
+		D6465F561E24FE5F004E8623 /* ListenerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerButton.swift; sourceTree = "<group>"; };
 		D6F613D61E24F632004884E8 /* Listenable-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Listenable-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F613D91E24F632004884E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6F613DB1E24F632004884E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6F613DB1E24F632004884E8 /* ListenerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerViewController.swift; sourceTree = "<group>"; };
 		D6F613DE1E24F632004884E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6F613E01E24F632004884E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6F613E31E24F632004884E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6F613E51E24F632004884E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDCDFDDB6349105F7E9A4CD3 /* Pods-Listenable-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listenable-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Listenable-Example/Pods-Listenable-Example.release.xcconfig"; sourceTree = "<group>"; };
+		D6F613E51E24F632004884E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,28 +58,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A33888CFFFA05F0923908D4 /* Pods_Listenable_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2E7208388BF95DE2BB4C078 /* Frameworks */ = {
+		46A961D71E2D725C001C659E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				211FA0C401A38B05A8FAE731 /* Pods_Listenable_Example.framework */,
+				46A961DC1E2D725C001C659E /* Listenable.framework */,
+				46A961DE1E2D725C001C659E /* ListenableTests.xctest */,
 			);
-			name = Frameworks;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6465F4F1E24FBE9004E8623 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D6F613E51E24F632004884E8 /* Info.plist */,
+				D6465F501E24FBE9004E8623 /* Assets.xcassets */,
+				D6465F511E24FBE9004E8623 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D6F613CD1E24F632004884E8 = {
 			isa = PBXGroup;
 			children = (
+				46A961D61E2D725C001C659E /* Listenable.xcodeproj */,
 				D6F613D81E24F632004884E8 /* Listenable-Example */,
 				D6F613D71E24F632004884E8 /* Products */,
-				E3A1F862C2AE51BEF03FF1B2 /* Pods */,
-				C2E7208388BF95DE2BB4C078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,22 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				D6F613D91E24F632004884E8 /* AppDelegate.swift */,
-				D6F613DB1E24F632004884E8 /* ViewController.swift */,
+				D6F613DB1E24F632004884E8 /* ListenerViewController.swift */,
+				D6465F561E24FE5F004E8623 /* ListenerButton.swift */,
+				D6465F541E24FC57004E8623 /* ListenableObject.swift */,
 				D6F613DD1E24F632004884E8 /* Main.storyboard */,
-				D6F613E01E24F632004884E8 /* Assets.xcassets */,
-				D6F613E21E24F632004884E8 /* LaunchScreen.storyboard */,
-				D6F613E51E24F632004884E8 /* Info.plist */,
+				D6465F4F1E24FBE9004E8623 /* Resource */,
 			);
 			path = "Listenable-Example";
-			sourceTree = "<group>";
-		};
-		E3A1F862C2AE51BEF03FF1B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BA98ED66502BBB79BF8191F7 /* Pods-Listenable-Example.debug.xcconfig */,
-				DDCDFDDB6349105F7E9A4CD3 /* Pods-Listenable-Example.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,16 +120,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6F613E81E24F632004884E8 /* Build configuration list for PBXNativeTarget "Listenable-Example" */;
 			buildPhases = (
-				8025EB706C5D5712F744D546 /* [CP] Check Pods Manifest.lock */,
 				D6F613D21E24F632004884E8 /* Sources */,
 				D6F613D31E24F632004884E8 /* Frameworks */,
 				D6F613D41E24F632004884E8 /* Resources */,
-				BE7B611CEABA30AC63B64016 /* [CP] Embed Pods Frameworks */,
-				285A0BFA386EB3AD3DDA52B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46A961E11E2D7283001C659E /* PBXTargetDependency */,
 			);
 			name = "Listenable-Example";
 			productName = "Listenable-Example";
@@ -138,6 +161,12 @@
 			mainGroup = D6F613CD1E24F632004884E8;
 			productRefGroup = D6F613D71E24F632004884E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 46A961D71E2D725C001C659E /* Products */;
+					ProjectRef = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D6F613D51E24F632004884E8 /* Listenable-Example */,
@@ -145,78 +174,57 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		46A961DC1E2D725C001C659E /* Listenable.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Listenable.framework;
+			remoteRef = 46A961DB1E2D725C001C659E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46A961DE1E2D725C001C659E /* ListenableTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ListenableTests.xctest;
+			remoteRef = 46A961DD1E2D725C001C659E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D6F613D41E24F632004884E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F613E41E24F632004884E8 /* LaunchScreen.storyboard in Resources */,
-				D6F613E11E24F632004884E8 /* Assets.xcassets in Resources */,
+				D6465F521E24FBE9004E8623 /* Assets.xcassets in Resources */,
+				D6465F531E24FBE9004E8623 /* LaunchScreen.storyboard in Resources */,
 				D6F613DF1E24F632004884E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		285A0BFA386EB3AD3DDA52B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listenable-Example/Pods-Listenable-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8025EB706C5D5712F744D546 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BE7B611CEABA30AC63B64016 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listenable-Example/Pods-Listenable-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D6F613D21E24F632004884E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F613DC1E24F632004884E8 /* ViewController.swift in Sources */,
+				D6F613DC1E24F632004884E8 /* ListenerViewController.swift in Sources */,
+				D6465F571E24FE5F004E8623 /* ListenerButton.swift in Sources */,
+				D6465F551E24FC57004E8623 /* ListenableObject.swift in Sources */,
 				D6F613DA1E24F632004884E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A961E11E2D7283001C659E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Listenable;
+			targetProxy = 46A961E01E2D7283001C659E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6F613DD1E24F632004884E8 /* Main.storyboard */ = {
@@ -225,14 +233,6 @@
 				D6F613DE1E24F632004884E8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D6F613E21E24F632004884E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6F613E31E24F632004884E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -278,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -331,7 +331,6 @@
 		};
 		D6F613E91E24F632004884E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA98ED66502BBB79BF8191F7 /* Pods-Listenable-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Listenable-Example/Info.plist";
@@ -344,7 +343,6 @@
 		};
 		D6F613EA1E24F632004884E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDCDFDDB6349105F7E9A4CD3 /* Pods-Listenable-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Listenable-Example/Info.plist";
@@ -374,6 +372,7 @@
 				D6F613EA1E24F632004884E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
