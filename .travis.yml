@@ -1,9 +1,4 @@
 
-branches:
- only:
- - master
- - develop
-
 language: objective-c
 osx_image: xcode8.2
 

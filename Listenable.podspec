@@ -5,13 +5,12 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.version      = "0.9.0"
-  s.summary      = "TODO"
+  s.summary      = "Object observation made easy"
   s.description  = <<-DESC
-                        TODO
+                        Swift object that provides an observable platform to allow multiple listeners to observe protocols.
                      DESC
 
-  s.homepage     = "https://github.com/MerrickSapsford/Pageboy"
-  #s.screenshots  = "https://raw.githubusercontent.com/MerrickSapsford/MSSTabbedPageViewController/develop/Resource/MSSTabbedPageViewController.gif"
+  s.homepage     = "https://github.com/MerrickSapsford/Listenable"
   s.license      = "MIT"
   s.author       = { "Merrick Sapsford" => "merrick@sapsford.tech" }
   s.social_media_url   = "http://twitter.com/MerrickSapsford"
