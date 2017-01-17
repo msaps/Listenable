@@ -1,19 +1,20 @@
-language: swift
 
-branches:
- only:
- - master
- - develop
+#branches:
+# only:
+# - master
+# - develop
 
-xcode_project: Listenable.xcodeproj
-xcode_scheme: Listenable
+language: objective-c
 osx_image: xcode8.2
 
-before_install:
-  - cd ./Source
-
 script:
-  - xcodebuild -project Listenable.xcodeproj -scheme Listenable -sdk iphonesimulator10.2 -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' build test
+  - xcodebuild -workspace Listenable.xcworkspace -scheme Listenable -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test
+
+deploy:
+  provider: script
+  script: ./scripts/push.sh
+  on:
+    tags: true
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
