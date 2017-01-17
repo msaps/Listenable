@@ -3,7 +3,7 @@ branches:
  only:
  - master
  - develop
- - release/*
+ - release
 
 language: objective-c
 osx_image: xcode8.2
