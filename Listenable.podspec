@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.version      = "0.9.0"
-  s.summary      = "Swift object that provides access to multiple observers for delegation."
+  s.summary      = "Object observation made easy"
   s.description  = <<-DESC
-                        Listenable is an object that provides access to multiple observers for enhanced delegation distribution.
+                        Swift object that provides observation platform to allow multiple listeners to observe protocols.
                      DESC
 
   s.homepage     = "https://github.com/MerrickSapsford/Listenable"
