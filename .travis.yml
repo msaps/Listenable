@@ -10,5 +10,11 @@ osx_image: xcode8.2
 script:
   - xcodebuild -workspace Listenable.xcworkspace -scheme Listenable -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test
 
+deploy:
+  provider: script
+  script: ./scripts/push.sh
+  on:
+    tags: true
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
