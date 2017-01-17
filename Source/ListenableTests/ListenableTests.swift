@@ -47,6 +47,13 @@ class ListenableTests: XCTestCase {
                   "Multiple listeners were not added successfully")
     }
     
+    func testAddExistingListenerFail() {
+        let listener = self.addTestListeners(count: 1, toListenableObject: self.listenableObject).first!
+        let successfulAdd = self.listenableObject.add(listener: listener)
+        
+        XCTAssert(successfulAdd == false, "Duplicate listener was able to be added")
+    }
+    
     func testRemoveListener() {
         let listeners = self.addTestListeners(count: 1,
                                               toListenableObject: self.listenableObject)
@@ -70,6 +77,17 @@ class ListenableTests: XCTestCase {
         
         XCTAssert((self.listenableObject.listenerCount == (proposedListenerCount - listeners.count)) && addedCount != 0,
                   "Multiple listeners were not removed successfully")
+    }
+    
+    func testRemoveNonExistentListenerFail() {
+        let listener = self.addTestListeners(count: 1,
+                                              toListenableObject: self.listenableObject).first!
+        self.listenableObject.remove(listener: listener)
+        
+        // attempt to remove again
+        let removeResult = self.listenableObject.remove(listener: listener)
+        
+        XCTAssert(removeResult == false, "Non existent listener was attempted to be removed")
     }
     
     func testRemoveAllListeners() {
