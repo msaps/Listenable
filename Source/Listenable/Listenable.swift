@@ -8,6 +8,19 @@
 
 import Foundation
 
+public enum ListenerPriority {
+    case low
+    case high
+    case custom(value: Int)
+    
+    var value: Int {
+        get {
+            // TODO - return actual priority values
+            return 0
+        }
+    }
+}
+
 /// An object which can have a number of listeners for delegation.
 open class Listenable<T>: AnyObject {
     
@@ -38,9 +51,14 @@ open class Listenable<T>: AnyObject {
     ///
     /// - Parameter listener: The new listener to add.
     /// - Returns: Whether the listener was successfully added.
-    @discardableResult public func add(listener: T) -> Bool {
+    @discardableResult public func add(listener: T,
+                                       priority: ListenerPriority = .low) -> Bool {
         if self.index(ofListener: listener) == nil {
-            self.listeners.append(ListenerNode(value: listener))
+            
+            
+            // TODO - Evaluate priority when adding listeners
+            self.listeners.append(ListenerNode(value: listener,
+                                               priority: priority.value))
             return true
         }
         return false
@@ -49,7 +67,8 @@ open class Listenable<T>: AnyObject {
     /// Add a number of new listeners to the Listenable object.
     ///
     /// - Parameter listeners: The new listeners to add.
-    public func add(listeners: [T]) -> Void {
+    public func add(listeners: [T],
+                    priority: ListenerPriority = .low) -> Void {
         for listener in listeners {
             self.add(listener: listener)
         }
