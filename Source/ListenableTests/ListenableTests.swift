@@ -28,7 +28,7 @@ class ListenableTests: XCTestCase {
         self.listenableObject = TestListenableObject()
     }
     
-    // MARK: Tests
+    // MARK: Add listeners
     
     func testAddListener() {
         let initialListenerCount = self.listenableObject.listenerCount
@@ -53,6 +53,28 @@ class ListenableTests: XCTestCase {
         
         XCTAssert(successfulAdd == false, "Duplicate listener was able to be added")
     }
+    
+    func testAddHighPriorityListener() {
+        let lowPriorityListeners = [TestListener(), TestListener(), TestListener()]
+        self.listenableObject.add(listeners: lowPriorityListeners, priority: .low)
+        
+        let highPriorityListener = TestListener()
+        self.listenableObject.add(listener: highPriorityListener, priority: .high)
+        
+        var initialListener: TestListener!
+        self.listenableObject.updateListeners { (listener, index) in
+            if let listener = listener as? TestListener, index == 0 {
+                initialListener = listener
+            }
+        }
+        
+        XCTAssert(initialListener === highPriorityListener,
+                  "High priority listener was not correctly inserted at index 0")
+    }
+    
+    // TODO: Add more prioritisation tests
+    
+    // MARK: Remove listeners
     
     func testRemoveListener() {
         let listeners = self.addTestListeners(count: 1,
@@ -101,6 +123,8 @@ class ListenableTests: XCTestCase {
         XCTAssert((addedCount != 0) && self.listenableObject.listenerCount == 0,
                   "All listeners were not removed successfully")
     }
+    
+    // MARK: Enumerate listeners
     
     func testEnumerateAllListeners() {
         let proposedListenerCount = Int(arc4random_uniform(maxListenerCount) + 1)
