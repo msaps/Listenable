@@ -8,19 +8,6 @@
 
 import Foundation
 
-public enum ListenerPriority {
-    case low
-    case high
-    case custom(value: Int)
-    
-    var value: Int {
-        get {
-            // TODO - return actual priority values
-            return 0
-        }
-    }
-}
-
 /// An object which can have a number of listeners for delegation.
 open class Listenable<T>: AnyObject {
     
@@ -50,15 +37,17 @@ open class Listenable<T>: AnyObject {
     /// Add a new listener to the Listenable object.
     ///
     /// - Parameter listener: The new listener to add.
+    /// - Paramter priority: Enumeration positional priority of the listener.
     /// - Returns: Whether the listener was successfully added.
     @discardableResult public func add(listener: T,
                                        priority: ListenerPriority = .low) -> Bool {
         if self.index(ofListener: listener) == nil {
             
+            let insertionIndex = self.insertionIndex(forListenerWithPriority: priority)
+            let node = ListenerNode(value: listener,
+                                    priority: priority.value)
+            self.listeners.insert(node, at: insertionIndex)
             
-            // TODO - Evaluate priority when adding listeners
-            self.listeners.append(ListenerNode(value: listener,
-                                               priority: priority.value))
             return true
         }
         return false
@@ -67,10 +56,11 @@ open class Listenable<T>: AnyObject {
     /// Add a number of new listeners to the Listenable object.
     ///
     /// - Parameter listeners: The new listeners to add.
+    /// - Paramter priority: Enumeration positional priority of the listeners.
     public func add(listeners: [T],
                     priority: ListenerPriority = .low) -> Void {
         for listener in listeners {
-            self.add(listener: listener)
+            self.add(listener: listener, priority: priority)
         }
     }
     
@@ -127,5 +117,27 @@ open class Listenable<T>: AnyObject {
             return wrapper.value === listener as AnyObject
         }
         return index
+    }
+    
+    private func insertionIndex(forListenerWithPriority priority: ListenerPriority) -> Int {
+        var insertionIndex: Int?
+        
+        if priority != .low {
+            
+            // enumerate until we find position where priority is less than desired
+            let priorityValue = priority.value
+            for (index, listener) in self.listeners.enumerated() {
+                if listener.priority < priorityValue {
+                    insertionIndex = index
+                    break
+                }
+            }
+        }
+        
+        if let insertionIndex = insertionIndex {
+            return insertionIndex
+        }
+        
+        return self.listeners.count
     }
 }

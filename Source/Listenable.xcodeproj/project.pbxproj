@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F9E4311E318209005D7089 /* ListenerPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9E4301E318209005D7089 /* ListenerPriority.swift */; };
 		D6465F591E250337004E8623 /* ListenerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F581E250337004E8623 /* ListenerNode.swift */; };
 		D6465F5B1E250355004E8623 /* TestListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5A1E250355004E8623 /* TestListenableObject.swift */; };
 		D6465F5D1E25063F004E8623 /* TestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5C1E25063F004E8623 /* TestListener.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46F9E4301E318209005D7089 /* ListenerPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerPriority.swift; sourceTree = "<group>"; };
 		D6465F581E250337004E8623 /* ListenerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerNode.swift; sourceTree = "<group>"; };
 		D6465F5A1E250355004E8623 /* TestListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListenableObject.swift; sourceTree = "<group>"; };
 		D6465F5C1E25063F004E8623 /* TestListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListener.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				D6F613B41E24F59D004884E8 /* Listenable.h */,
 				D6F613CB1E24F5F2004884E8 /* Listenable.swift */,
+				46F9E4301E318209005D7089 /* ListenerPriority.swift */,
 				D6465F581E250337004E8623 /* ListenerNode.swift */,
 				D6F613B51E24F59D004884E8 /* Info.plist */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F9E4311E318209005D7089 /* ListenerPriority.swift in Sources */,
 				D6465F591E250337004E8623 /* ListenerNode.swift in Sources */,
 				D6F613CC1E24F5F2004884E8 /* Listenable.swift in Sources */,
 			);
