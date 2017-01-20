@@ -54,6 +54,8 @@ class ListenableTests: XCTestCase {
         XCTAssert(successfulAdd == false, "Duplicate listener was able to be added")
     }
     
+    // MARK: Prioritisation
+    
     func testAddHighPriorityListener() {
         let lowPriorityListeners = [TestListener(), TestListener(), TestListener()]
         self.listenableObject.add(listeners: lowPriorityListeners, priority: .low)
@@ -72,7 +74,44 @@ class ListenableTests: XCTestCase {
                   "High priority listener was not correctly inserted at index 0")
     }
     
-    // TODO: Add more prioritisation tests
+    func testAddLowPriorityListener() {
+        let highPriorityListeners = [TestListener(), TestListener(), TestListener()]
+        self.listenableObject.add(listeners: highPriorityListeners, priority: .high)
+        
+        let lowPriorityListener = TestListener()
+        self.listenableObject.add(listener: lowPriorityListener, priority: .low)
+        
+        var finalListener: TestListener!
+        self.listenableObject.updateListeners { (listener, index) in
+            if let listener = listener as? TestListener, index == self.listenableObject.listenerCount - 1 {
+                finalListener = listener
+            }
+        }
+        
+        XCTAssert(finalListener === lowPriorityListener,
+                  "Low priority listener was not correctly inserted at end of listener queue")
+    }
+
+    func testAddCustomPriorityListener() {
+        let highPriorityListeners = [TestListener()]
+        self.listenableObject.add(listeners: highPriorityListeners, priority: .high)
+        
+        let lowPriorityListeners = [TestListener()]
+        self.listenableObject.add(listeners: lowPriorityListeners, priority: .low)
+        
+        let customPriorityListener = TestListener()
+        self.listenableObject.add(listener: customPriorityListener, priority: .custom(value: 500))
+        
+        var middleListener: TestListener!
+        self.listenableObject.updateListeners { (listener, index) in
+            if let listener = listener as? TestListener,  index == self.listenableObject.listenerCount - lowPriorityListeners.count - 1 {
+                middleListener = listener
+            }
+        }
+        
+        XCTAssert(middleListener === customPriorityListener,
+                  "Custom priority (500) listener was not correctly inserted to the middle of the listener queue")
+    }
     
     // MARK: Remove listeners
     
