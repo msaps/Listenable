@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F9E4311E318209005D7089 /* ListenerPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9E4301E318209005D7089 /* ListenerPriority.swift */; };
 		D6465F591E250337004E8623 /* ListenerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F581E250337004E8623 /* ListenerNode.swift */; };
-		D6465F5B1E250355004E8623 /* TestListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5A1E250355004E8623 /* TestListenableObject.swift */; };
-		D6465F5D1E25063F004E8623 /* TestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F5C1E25063F004E8623 /* TestListener.swift */; };
+		D67206471E326E42003E22C3 /* TestListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67206451E326E42003E22C3 /* TestListenableObject.swift */; };
+		D67206481E326E42003E22C3 /* TestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67206461E326E42003E22C3 /* TestListener.swift */; };
 		D6F613BB1E24F59D004884E8 /* Listenable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F613B11E24F59D004884E8 /* Listenable.framework */; };
 		D6F613C01E24F59D004884E8 /* ListenableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613BF1E24F59D004884E8 /* ListenableTests.swift */; };
 		D6F613C21E24F59D004884E8 /* Listenable.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F613B41E24F59D004884E8 /* Listenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46F9E4301E318209005D7089 /* ListenerPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerPriority.swift; sourceTree = "<group>"; };
 		D6465F581E250337004E8623 /* ListenerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerNode.swift; sourceTree = "<group>"; };
-		D6465F5A1E250355004E8623 /* TestListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListenableObject.swift; sourceTree = "<group>"; };
-		D6465F5C1E25063F004E8623 /* TestListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListener.swift; sourceTree = "<group>"; };
+		D67206451E326E42003E22C3 /* TestListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListenableObject.swift; sourceTree = "<group>"; };
+		D67206461E326E42003E22C3 /* TestListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListener.swift; sourceTree = "<group>"; };
 		D6F613B11E24F59D004884E8 /* Listenable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Listenable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F613B41E24F59D004884E8 /* Listenable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Listenable.h; sourceTree = "<group>"; };
 		D6F613B51E24F59D004884E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67206441E326E42003E22C3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D67206451E326E42003E22C3 /* TestListenableObject.swift */,
+				D67206461E326E42003E22C3 /* TestListener.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		D6F613A71E24F59D004884E8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 			children = (
 				D6F613B41E24F59D004884E8 /* Listenable.h */,
 				D6F613CB1E24F5F2004884E8 /* Listenable.swift */,
+				46F9E4301E318209005D7089 /* ListenerPriority.swift */,
 				D6465F581E250337004E8623 /* ListenerNode.swift */,
 				D6F613B51E24F59D004884E8 /* Info.plist */,
 			);
@@ -90,8 +102,7 @@
 		D6F613BE1E24F59D004884E8 /* ListenableTests */ = {
 			isa = PBXGroup;
 			children = (
-				D6465F5A1E250355004E8623 /* TestListenableObject.swift */,
-				D6465F5C1E25063F004E8623 /* TestListener.swift */,
+				D67206441E326E42003E22C3 /* Objects */,
 				D6F613BF1E24F59D004884E8 /* ListenableTests.swift */,
 				D6F613C11E24F59D004884E8 /* Info.plist */,
 			);
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F9E4311E318209005D7089 /* ListenerPriority.swift in Sources */,
 				D6465F591E250337004E8623 /* ListenerNode.swift in Sources */,
 				D6F613CC1E24F5F2004884E8 /* Listenable.swift in Sources */,
 			);
@@ -219,8 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F613C01E24F59D004884E8 /* ListenableTests.swift in Sources */,
-				D6465F5D1E25063F004E8623 /* TestListener.swift in Sources */,
-				D6465F5B1E250355004E8623 /* TestListenableObject.swift in Sources */,
+				D67206481E326E42003E22C3 /* TestListener.swift in Sources */,
+				D67206471E326E42003E22C3 /* TestListenableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

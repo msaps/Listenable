@@ -21,7 +21,7 @@ class ListenerViewController: UIViewController, ListenableObjectDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.listenableObject.add(listeners: [self, self.actionButton])
+        self.listenableObject.add(listeners: [self, self.actionButton], priority: .low)
     }
     
     // MARK: Actions
