@@ -113,6 +113,42 @@ class ListenableTests: XCTestCase {
                   "Custom priority (500) listener was not correctly inserted to the middle of the listener queue")
     }
     
+    func testOutOfBoundsMaxPriorityListener() {
+        let highPriorityListeners = [TestListener(), TestListener(), TestListener()]
+        self.listenableObject.add(listeners: highPriorityListeners, priority: .high)
+
+        let uberHighPrioritylistener = TestListener()
+        self.listenableObject.add(listener: uberHighPrioritylistener, priority: .custom(value: 1001))
+        
+        var lastListener: TestListener!
+        self.listenableObject.updateListeners { (listener, index) in
+            if let listener = listener as? TestListener, index == self.listenableObject.listenerCount - 1 {
+                lastListener = listener
+            }
+        }
+        
+        XCTAssert(lastListener === uberHighPrioritylistener,
+                  "Listener with out of range 1001 priority was not floored to 1000 and inserted at the end of the high priority queue.")
+    }
+    
+    func testOutOfBoundsMinPriorityListener() {
+        let lowPriorityListeners = [TestListener(), TestListener(), TestListener()]
+        self.listenableObject.add(listeners: lowPriorityListeners, priority: .low)
+        
+        let uberLowPrioritylistener = TestListener()
+        self.listenableObject.add(listener: uberLowPrioritylistener, priority: .custom(value: -1))
+        
+        var lastListener: TestListener!
+        self.listenableObject.updateListeners { (listener, index) in
+            if let listener = listener as? TestListener, index == self.listenableObject.listenerCount - 1 {
+                lastListener = listener
+            }
+        }
+
+        XCTAssert(lastListener === uberLowPrioritylistener,
+                  "Listener with out of range -1 priority was not ceiled to 0 and inserted at the end of the low priority queue.")
+    }
+    
     // MARK: Remove listeners
     
     func testRemoveListener() {
