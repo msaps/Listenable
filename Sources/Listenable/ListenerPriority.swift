@@ -25,10 +25,10 @@ public enum ListenerPriority: Equatable {
             switch self {
             case .high:
                 return 1000
-            case .custom(let value):
-                return value
-            default:
+            case .low:
                 return 0
+            case .custom(let value):
+                return max(ListenerPriority.low.value, min(ListenerPriority.high.value, value))
             }
         }
     }
