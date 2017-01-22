@@ -17,31 +17,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46A961DB1E2D725C001C659E /* PBXContainerItemProxy */ = {
+		46F1E2D91E33D0E200E83B5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+			containerPortal = 46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D6F613B11E24F59D004884E8;
 			remoteInfo = Listenable;
 		};
-		46A961DD1E2D725C001C659E /* PBXContainerItemProxy */ = {
+		46F1E2DB1E33D0E200E83B5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+			containerPortal = 46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D6F613BA1E24F59D004884E8;
 			remoteInfo = ListenableTests;
 		};
-		46A961E01E2D7283001C659E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D6F613B01E24F59D004884E8;
-			remoteInfo = Listenable;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46A961D61E2D725C001C659E /* Listenable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Listenable.xcodeproj; path = ../Source/Listenable.xcodeproj; sourceTree = "<group>"; };
+		46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Listenable.xcodeproj; path = ../Sources/Listenable.xcodeproj; sourceTree = "<group>"; };
 		D6465F501E24FBE9004E8623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6465F511E24FBE9004E8623 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6465F541E24FC57004E8623 /* ListenableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenableObject.swift; sourceTree = "<group>"; };
@@ -64,11 +57,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46A961D71E2D725C001C659E /* Products */ = {
+		46F1E2D51E33D0E200E83B5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46A961DC1E2D725C001C659E /* Listenable.framework */,
-				46A961DE1E2D725C001C659E /* ListenableTests.xctest */,
+				46F1E2DA1E33D0E200E83B5B /* Listenable.framework */,
+				46F1E2DC1E33D0E200E83B5B /* ListenableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +79,7 @@
 		D6F613CD1E24F632004884E8 = {
 			isa = PBXGroup;
 			children = (
-				46A961D61E2D725C001C659E /* Listenable.xcodeproj */,
+				46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */,
 				D6F613D81E24F632004884E8 /* Listenable-Example */,
 				D6F613D71E24F632004884E8 /* Products */,
 			);
@@ -127,7 +120,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				46A961E11E2D7283001C659E /* PBXTargetDependency */,
 			);
 			name = "Listenable-Example";
 			productName = "Listenable-Example";
@@ -163,8 +155,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 46A961D71E2D725C001C659E /* Products */;
-					ProjectRef = 46A961D61E2D725C001C659E /* Listenable.xcodeproj */;
+					ProductGroup = 46F1E2D51E33D0E200E83B5B /* Products */;
+					ProjectRef = 46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -175,18 +167,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		46A961DC1E2D725C001C659E /* Listenable.framework */ = {
+		46F1E2DA1E33D0E200E83B5B /* Listenable.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Listenable.framework;
-			remoteRef = 46A961DB1E2D725C001C659E /* PBXContainerItemProxy */;
+			remoteRef = 46F1E2D91E33D0E200E83B5B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		46A961DE1E2D725C001C659E /* ListenableTests.xctest */ = {
+		46F1E2DC1E33D0E200E83B5B /* ListenableTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ListenableTests.xctest;
-			remoteRef = 46A961DD1E2D725C001C659E /* PBXContainerItemProxy */;
+			remoteRef = 46F1E2DB1E33D0E200E83B5B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -217,14 +209,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		46A961E11E2D7283001C659E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Listenable;
-			targetProxy = 46A961E01E2D7283001C659E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6F613DD1E24F632004884E8 /* Main.storyboard */ = {
