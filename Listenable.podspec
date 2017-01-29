@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version      = "0.9.1"
   s.summary      = "Observable pattern in Swift made easy"
   s.description  = <<-DESC
-                        Swift object that provides an observable platform to allow multiple listeners.
+                        Swift object that provides an observable platform for multiple listeners.
                      DESC
 
   s.homepage     = "https://github.com/MerrickSapsford/Listenable"
