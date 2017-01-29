@@ -3,7 +3,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/Listenable.svg)]()
 [![codecov](https://codecov.io/gh/MerrickSapsford/Listenable/branch/develop/graph/badge.svg)](https://codecov.io/gh/MerrickSapsford/Listenable)
 
-Swift object that provides an observable platform to allow multiple listeners to observe protocols.
+Swift object that provides an observable platform to allow multiple listeners.
 
 ## Installation
 Listenable is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
