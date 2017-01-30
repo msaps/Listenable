@@ -4,10 +4,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.requires_arc = true
 
-  s.version      = "0.9.0"
-  s.summary      = "Object observation made easy"
+  s.version      = "0.9.1"
+  s.summary      = "Observable pattern in Swift made easy"
   s.description  = <<-DESC
-                        Swift object that provides an observable platform to allow multiple listeners to observe protocols.
+                        Swift object that provides an observable platform for multiple listeners.
                      DESC
 
   s.homepage     = "https://github.com/MerrickSapsford/Listenable"
@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/MerrickSapsford"
 
   s.source       = { :git => "https://github.com/MerrickSapsford/Listenable.git", :tag => s.version.to_s }
-  s.source_files  = "Source/Listenable/**/*.{h,m,swift}"
+  s.source_files  = "Sources/Listenable/**/*.{h,m,swift}"
 
 end

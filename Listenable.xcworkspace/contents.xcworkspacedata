@@ -5,6 +5,6 @@
       location = "group:Example/Listenable-Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Source/Listenable.xcodeproj">
+      location = "group:Sources/Listenable.xcodeproj">
    </FileRef>
 </Workspace>

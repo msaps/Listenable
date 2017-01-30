@@ -11,8 +11,10 @@ import Foundation
 internal class ListenerNode<T> {
     
     weak var value: AnyObject?
+    var priority: Int
     
-    init(value: T) {
+    init(value: T, priority: Int) {
         self.value = value as AnyObject
+        self.priority = priority
     }
 }
