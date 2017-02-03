@@ -110,6 +110,15 @@ open class Listenable<T>: AnyObject {
         }
     }
     
+    /// Check whether an object is a registered listener.
+    ///
+    /// - parameter object: The object to check.
+    ///
+    /// - returns: Whether the object is a listener.
+    public func isListener(_ object: T) -> Bool{
+        return self.index(ofListener: object) != nil
+    }
+    
     // MARK: Private
     
     private func index(ofListener listener: T) -> Int? {

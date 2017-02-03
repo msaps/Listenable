@@ -54,6 +54,13 @@ class ListenableTests: XCTestCase {
         XCTAssert(successfulAdd == false, "Duplicate listener was able to be added")
     }
     
+    func testListenerDetection() {
+        let listener = self.addTestListeners(count: 1, toListenableObject: self.listenableObject).first!
+        
+        XCTAssert(self.listenableObject.isListener(listener),
+                  "Listeners are not correctly identified as registered")
+    }
+    
     // MARK: Prioritisation
     
     func testAddHighPriorityListener() {
