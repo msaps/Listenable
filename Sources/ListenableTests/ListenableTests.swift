@@ -156,6 +156,54 @@ class ListenableTests: XCTestCase {
                   "Listener with out of range -1 priority was not ceiled to 0 and inserted at the end of the low priority queue.")
     }
     
+    func testExclusivePriorityUpdating() {
+        let lowPriorityListeners = [TestListener(), TestListener(), TestListener()]
+        let highPriorityListeners = [TestListener(), TestListener()]
+        
+        self.listenableObject.add(listeners: lowPriorityListeners, priority: .low)
+        self.listenableObject.add(listeners: highPriorityListeners, priority: .high)
+        
+        var updateCount = 0
+        self.listenableObject.updateListeners(withPriority: .high) { (listener, index) in
+            updateCount += 1
+        }
+        
+        XCTAssert(updateCount == highPriorityListeners.count,
+                  "Exclusive ListenerPriority updating is including incorrect priorities")
+    }
+    
+    func testExclusivePriorityRangeUpdating() {
+        let listeners = [TestListener(), TestListener(), TestListener()]
+        
+        self.listenableObject.add(listener: listeners[0], priority: .custom(value: 10))
+        self.listenableObject.add(listener: listeners[1], priority: .custom(value: 15))
+        self.listenableObject.add(listener: listeners[2], priority: .custom(value: 20))
+
+        var updateCount = 0
+        self.listenableObject.updateListeners(withPriorities: 16...20) { (listener, index) in
+            updateCount += 1
+        }
+        
+        XCTAssert(updateCount == 1,
+                  "Exclusive range prioritised updating is including incorrect priorities")
+    }
+    
+    func testExclusivePriorityRangeOutOfBoundsUpdating() {
+        let listeners = [TestListener(), TestListener(), TestListener()]
+
+        self.listenableObject.add(listener: listeners[0], priority: .low)
+        self.listenableObject.add(listener: listeners[1], priority: .custom(value: 500))
+        self.listenableObject.add(listener: listeners[2], priority: .high)
+        
+        var updateCount = 0
+        self.listenableObject.updateListeners(withPriorities: 1001...5000) { (listener, index) in
+            updateCount += 1
+        }
+        
+        XCTAssert(updateCount == 0,
+                  "Exclusive range prioritised updating is including incorrect priorities")
+    }
+    
     // MARK: Remove listeners
     
     func testRemoveListener() {
