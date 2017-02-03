@@ -91,17 +91,41 @@ open class Listenable<T>: AnyObject {
         self.listeners.removeAll()
     }
     
-    /// Update all the listeners of the Listener object.
+    
+    /// Update the registered listeners of the Listener object.
     ///
-    /// - Parameter updateBlock: Update execution block for each listener.
-    public func updateListeners(_ updateBlock: ListenerUpdate) -> Void {
+    /// - parameter priority: The exclusive priority of listeners to update.
+    /// - parameter update:   Update execution closure for each listener.
+    public func updateListeners(withPriority priority: ListenerPriority,
+                                _ update: ListenerUpdate) -> Void {
+        let value = priority.value
+        self.updateListeners(withPriorities: value...value, update)
+    }
+    
+    /// Update the registered listeners of the Listener object.
+    ///
+    /// - Parameter priorities: The range of listener priorities to update.
+    /// - Parameter update: Update execution closure for each listener.
+    public func updateListeners(withPriorities priorities: ClosedRange<Int>? = nil,
+                                _ update: ListenerUpdate) -> Void {
+        
         var listenersToRemove = [ListenerNode<T>]()
         
         for (index, listenerWrapper) in self.listeners.enumerated() {
-            if let listener = listenerWrapper.value as? T {
-                updateBlock(listener, index)
-            } else {
+            guard let listener = listenerWrapper.value as? T else {
                 listenersToRemove.append(listenerWrapper)
+                continue
+            }
+            
+            if let priorities = priorities { // evaluate whether listener has required priority
+                guard priorities.contains(listenerWrapper.priority) else {
+                    continue
+                }
+                
+                update(listener, index)
+                
+            } else { // no priority restriction
+                update(listener, index)
             }
         }
         // clean up any listeners which have been destroyed
@@ -115,7 +139,7 @@ open class Listenable<T>: AnyObject {
     /// - parameter object: The object to check.
     ///
     /// - returns: Whether the object is a listener.
-    public func isListener(_ object: T) -> Bool{
+    public func isListener(_ object: T) -> Bool {
         return self.index(ofListener: object) != nil
     }
     
