@@ -50,10 +50,10 @@ Enumerate & Update Listeners:
 Listeners can also be updated exclusively relative to their priority:
 ```swift
 	updateListeners(withPriority: ListenerPriority?, 
-					   update: (listener: Listener, index: Int) -> Void)
+				    	  update: (listener: Listener, index: Int) -> Void)
 					   
 	updateListeners(withPriorities: ClosedRange<Int>?, 
-						update: (listener: Listener, index: Int) -> Void)
+				    	    update: (listener: Listener, index: Int) -> Void)
 ```
 
 ## Contributing
