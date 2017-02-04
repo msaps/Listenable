@@ -19,7 +19,8 @@ class ListenableObject: Listenable<ListenableObjectDelegate> {
     
     /// Calls listenableObjectDidProvideUpdate on all registered listeners.
     func updateAllListeners() {
-        self.updateListeners{ (listener, index) in
+        
+        self.updateListeners(withPriority: .high) { (listener, index) in
             listener.listenableObjectDidProvideUpdate(self)
         }
     }

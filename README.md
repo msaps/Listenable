@@ -36,8 +36,9 @@ Remove Listener(s):
 ```
 Enumerate & Update Listeners:
 ```swift
-	updateListeners(updateBlock: (listener: Listener, index: Int) -> Void)
+	updateListeners(update: (listener: Listener, index: Int) -> Void)
 ```
+
 #### Prioritisation
 `ListenerPriority` allows for definition of enumeration priority for a listener; by default the `priority` parameter is set to `.low`. The following values can be assigned:
 ```swift
@@ -45,6 +46,16 @@ Enumerate & Update Listeners:
 	.high 		(Raw: 1000)
 	.custom		(Valid range: 0-1000)
 ```
+
+Listeners can also be updated exclusively relative to their priority:
+```swift
+	updateListeners(withPriority: ListenerPriority?, 
+				    	  update: (listener: Listener, index: Int) -> Void)
+					   
+	updateListeners(withPriorities: ClosedRange<Int>?, 
+				    	    update: (listener: Listener, index: Int) -> Void)
+```
+
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/MerrickSapsford/Listenable.
 
