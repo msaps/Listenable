@@ -1,5 +1,5 @@
 # Listenable
-[![Build Status](https://travis-ci.org/MerrickSapsford/MSSTabbedPageViewController.svg?branch=develop)](https://travis-ci.org/MerrickSapsford/MSSTabbedPageViewController)
+[![Build Status](https://travis-ci.org/MerrickSapsford/Listenable.svg?branch=develop)](https://travis-ci.org/MerrickSapsford/Listenable)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Listenable.svg)]()
 [![codecov](https://codecov.io/gh/MerrickSapsford/Listenable/branch/develop/graph/badge.svg)](https://codecov.io/gh/MerrickSapsford/Listenable)
 
