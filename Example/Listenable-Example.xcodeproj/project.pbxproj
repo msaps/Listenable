@@ -11,6 +11,8 @@
 		D6465F531E24FBE9004E8623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6465F511E24FBE9004E8623 /* LaunchScreen.storyboard */; };
 		D6465F551E24FC57004E8623 /* ListenableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F541E24FC57004E8623 /* ListenableObject.swift */; };
 		D6465F571E24FE5F004E8623 /* ListenerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6465F561E24FE5F004E8623 /* ListenerButton.swift */; };
+		D6E73A741E51FF0E00A8D5A5 /* Listenable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1E2DA1E33D0E200E83B5B /* Listenable.framework */; };
+		D6E73A751E51FF0E00A8D5A5 /* Listenable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1E2DA1E33D0E200E83B5B /* Listenable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6F613DA1E24F632004884E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613D91E24F632004884E8 /* AppDelegate.swift */; };
 		D6F613DC1E24F632004884E8 /* ListenerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F613DB1E24F632004884E8 /* ListenerViewController.swift */; };
 		D6F613DF1E24F632004884E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F613DD1E24F632004884E8 /* Main.storyboard */; };
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = D6F613BA1E24F59D004884E8;
 			remoteInfo = ListenableTests;
 		};
+		D6E73A761E51FF0E00A8D5A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F613B01E24F59D004884E8;
+			remoteInfo = Listenable;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6E73A781E51FF0E00A8D5A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D6E73A751E51FF0E00A8D5A5 /* Listenable.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46F1E2D41E33D0E200E83B5B /* Listenable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Listenable.xcodeproj; path = ../Sources/Listenable.xcodeproj; sourceTree = "<group>"; };
@@ -51,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E73A741E51FF0E00A8D5A5 /* Listenable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,10 +140,12 @@
 				D6F613D21E24F632004884E8 /* Sources */,
 				D6F613D31E24F632004884E8 /* Frameworks */,
 				D6F613D41E24F632004884E8 /* Resources */,
+				D6E73A781E51FF0E00A8D5A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6E73A771E51FF0E00A8D5A5 /* PBXTargetDependency */,
 			);
 			name = "Listenable-Example";
 			productName = "Listenable-Example";
@@ -209,6 +235,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6E73A771E51FF0E00A8D5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Listenable;
+			targetProxy = D6E73A761E51FF0E00A8D5A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6F613DD1E24F632004884E8 /* Main.storyboard */ = {
@@ -316,6 +350,7 @@
 		D6F613E91E24F632004884E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Listenable-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -328,6 +363,7 @@
 		D6F613EA1E24F632004884E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Listenable-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
