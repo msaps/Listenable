@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.requires_arc = true
 
-  s.version      = "0.9.2"
+  s.version      = "1.0.0"
   s.summary      = "Observable pattern in Swift made easy"
   s.description  = <<-DESC
                         Swift object that provides an observable platform for multiple listeners.
