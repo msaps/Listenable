@@ -1,7 +1,10 @@
 # Listenable
-[![Build Status](https://travis-ci.org/msaps/Listenable.svg?branch=develop)](https://travis-ci.org/msaps/Listenable)
+[![Build Status](https://travis-ci.org/msaps/Listenable.svg?branch=master)](https://travis-ci.org/msaps/Listenable)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Listenable.svg)]()
-[![codecov](https://codecov.io/gh/msaps/Listenable/branch/develop/graph/badge.svg)](https://codecov.io/gh/msaps/Listenable)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![codecov](https://codecov.io/gh/msaps/Listenable/branch/master/graph/badge.svg)](https://codecov.io/gh/msaps/Listenable)
+[![GitHub release](https://img.shields.io/github/release/msaps/Listenable.svg)](https://github.com/msaps/Listenable/releases)
 
 Swift object that provides an observable platform for multiple listeners.
 
