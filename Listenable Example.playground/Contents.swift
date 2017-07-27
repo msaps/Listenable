@@ -34,11 +34,9 @@ let observableObject = Object()
 let listener = Listener()
 
 observableObject.add(listener: listener)
-
 /*:
  Then you can simply prompt the listeners with updates whenever you require from your observable object.
  */
-
 extension Object {
     
     func action() {
@@ -47,3 +45,13 @@ extension Object {
         }
     }
 }
+/*:
+ ### Prioritisation and other niceties
+ 
+ **Listenable** provides the ability to register listeners with varying priorities. This allows certain listeners to recieve updates before others depending on their priority.
+ */
+let highPriorityListener = Listener()
+observableObject.add(listener: highPriorityListener, priority: .high)
+/*:
+ `highPriorityListener` will receive any updates before `listener` as the default priority is `.low`. Custom priorities can also be set by using the `.custom(value: Int)` value.
+ */
