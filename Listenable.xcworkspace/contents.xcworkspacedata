@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Example/Listenable-Example.xcodeproj">
+      location = "group:Listenable Example.playground">
    </FileRef>
    <FileRef
       location = "group:Sources/Listenable.xcodeproj">

@@ -9,7 +9,7 @@
 import Foundation
 
 /// An object which can have a number of listeners for delegation.
-open class Listenable<T>: AnyObject {
+open class Listenable<T> {
     
     // MARK: Closures
     
