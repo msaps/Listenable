@@ -8,10 +8,32 @@
 
 import Foundation
 
-/// An object which can have a number of listeners for delegation.
-open class Listenable<T> {
+public protocol ListenableType: class {
+    associatedtype Listener
     
-    // MARK: Closures
+    func add(listener: Listener,
+             priority: ListenerPriority) -> Bool
+    func add(listeners: [Listener],
+             priority: ListenerPriority) -> Void
+    
+    func remove(listener: Listener) -> Bool
+    func remove(listeners: [Listener]) -> Void
+    func removeAllListeners() -> Void
+    
+    func updateListeners(withPriority priority: ListenerPriority,
+                         _ update: Listenable<Listener>.ListenerUpdate) -> Void
+    func updateListeners(withPriorities priorities: ClosedRange<Int>?,
+                         _ update: Listenable<Listener>.ListenerUpdate) -> Void
+    
+    func isListener(_ object: Listener) -> Bool
+}
+
+/// An object which can have a number of listeners for delegation.
+open class Listenable<T>: ListenableType {
+    
+    // MARK: Types
+    
+    public typealias Listener = T
     
     public typealias ListenerUpdate = (_ listener: T,_ index: Int) -> Void
     
