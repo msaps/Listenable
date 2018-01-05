@@ -10,8 +10,8 @@ Swift object that provides an observable platform for multiple listeners.
 
 ## Requirements
 - iOS 9.0+
-- Xcode 8.x+
-- Swift 3
+- Xcode 9.x+
+- Swift 4
 
 ## Installation
 Listenable is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
