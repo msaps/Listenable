@@ -26,6 +26,8 @@ public protocol ListenableType: class {
                          _ update: Listenable<Listener>.ListenerUpdate) -> Void
     
     func isListener(_ object: Listener) -> Bool
+
+    var listenerCount: Int { get }
 }
 
 /// An object which can have a number of listeners for delegation.
@@ -42,7 +44,7 @@ open class Listenable<T>: ListenableType {
     lazy private var listeners = [ListenerNode<T>]()
     
     /// The number of currently active listeners.
-    var listenerCount: Int {
+    public var listenerCount: Int {
         get {
             return self.listeners.count
         }
